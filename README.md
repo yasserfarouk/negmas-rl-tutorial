@@ -20,10 +20,15 @@ To run style checks:
 ```
 $ git clone https://github.com/yasserfarouk/negmas-rl-tutorial.git
 $ cd negmas-rl-tutorial
-$ uv sync
+$ uv sync --all-extras --dev
 $ source .venv/bin/source
 (.venv) $ uv pip install pre-commit
 (.venv) $ pre-commit run -a
 ```
 
+You can run all tests to check that everything is in order using:
+
+```
+(.venv) $ python -m pytest tests
+```
 
