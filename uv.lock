@@ -1559,6 +1559,10 @@ dependencies = [
 ]
 
 [package.optional-dependencies]
+dev = [
+    { name = "jupyter" },
+    { name = "matplotlib" },
+]
 doc = [
     { name = "ipywidgets" },
     { name = "mkdocs" },
@@ -1599,6 +1603,8 @@ requires-dist = [
     { name = "hypothesis", marker = "extra == 'test'" },
     { name = "hypothesis", marker = "extra == 'testing'", specifier = ">=6.123.7" },
     { name = "ipywidgets", marker = "extra == 'doc'", specifier = ">=8.1.5" },
+    { name = "jupyter", marker = "extra == 'dev'", specifier = ">=1.1.1" },
+    { name = "matplotlib", marker = "extra == 'dev'", specifier = ">=3.10.0" },
     { name = "mkdocs", marker = "extra == 'doc'" },
     { name = "mkdocs-gen-files", marker = "extra == 'doc'" },
     { name = "mkdocs-jupyter", marker = "extra == 'doc'" },

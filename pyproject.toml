@@ -68,6 +68,10 @@ testing = [
     "hypothesis>=6.123.7",
     "pytest>=8.3.4",
 ]
+dev = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.0",
+]
 # docs = [
 #     # "jupyter>=1.1.1",
 #     # "jupyter-contrib-nbextensions>=0.7.0",
