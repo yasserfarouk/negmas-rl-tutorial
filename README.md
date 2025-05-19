@@ -18,6 +18,8 @@ To install, run
 To run style checks:
 
 ```
+$ git clone https://github.com/yasserfarouk/negmas-rl-tutorial.git
+$ cd negmas-rl-tutorial
 $ uv sync
 $ source .venv/bin/source
 (.venv) $ uv pip install pre-commit
