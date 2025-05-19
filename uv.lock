@@ -1512,8 +1512,8 @@ wheels = [
 
 [[package]]
 name = "negmas"
-version = "0.11.5"
-source = { registry = "https://pypi.org/simple" }
+version = "0.11.6"
+source = { git = "https://github.com/yasserfarouk/negmas#094302a3b4f169621656be6a3c63bb3a2bda9577" }
 dependencies = [
     { name = "attrs" },
     { name = "click" },
@@ -1542,10 +1542,6 @@ dependencies = [
     { name = "tabulate" },
     { name = "typer" },
     { name = "typing-extensions" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/3e/9f/cde0faa909d6382170979974c8ee771208ae0de072b94fbe9256f1dc8de9/negmas-0.11.5.tar.gz", hash = "sha256:644bbd3ec70f54a89a8f82a520b2bf75a9edb48c11aba215cdc64b9bb2422ee2", size = 81983 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/29/7d/77a741cf99bfd4e45238c1f641fe00e6a2fbcbfd0510cc3a094b2b17a8f4/negmas-0.11.5-py3-none-any.whl", hash = "sha256:4c9f86eba6653983c24658086128a13c82278379c24c911fc00d400d73275c08", size = 65975 },
 ]
 
 [[package]]
@@ -1612,7 +1608,7 @@ requires-dist = [
     { name = "mkdocstrings", marker = "extra == 'doc'" },
     { name = "mkdocstrings", extras = ["python"], marker = "extra == 'doc'" },
     { name = "mypy", marker = "extra == 'test'" },
-    { name = "negmas", specifier = ">=0.11.5" },
+    { name = "negmas", git = "https://github.com/yasserfarouk/negmas" },
     { name = "notebook", marker = "extra == 'doc'", specifier = ">=7.3.2" },
     { name = "pytest", marker = "extra == 'test'" },
     { name = "pytest", marker = "extra == 'testing'", specifier = ">=8.3.4" },

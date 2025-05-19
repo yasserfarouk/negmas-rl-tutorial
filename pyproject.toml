@@ -20,6 +20,7 @@ dependencies = [
 authors = [
     {name = "Yasser Mohammad", email = "y.mohammad@nec.com"}
 ]
+
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -31,6 +32,9 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ]
 dynamic = ["version"]
+
+[tool.uv.sources]
+negmas = { git = "https://github.com/yasserfarouk/negmas" }
 
 [project.urls]
 source = "https://github.com/yasserfarouk/negmas-rl"
