@@ -15,16 +15,19 @@ To install, run
 
 ## Development
 
-To run style checks:
+To start developing RL agents for negotiation, run:
 
 ```
 $ git clone https://github.com/yasserfarouk/negmas-rl-tutorial.git
 $ cd negmas-rl-tutorial
-$ uv sync --all-extras --dev
+$ uv sync --all-extras --dev -p 3.12
 $ source .venv/bin/source
 (.venv) $ uv pip install pre-commit
 (.venv) $ pre-commit run -a
 ```
+
+It is important to use python version 3.12 because some of the dependencies we use are not yet updated for python 3.13.
+
 
 You can run all tests to check that everything is in order using:
 
