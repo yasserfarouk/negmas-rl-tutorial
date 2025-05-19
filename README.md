@@ -35,3 +35,4 @@ You can run all tests to check that everything is in order using:
 (.venv) $ python -m pytest tests
 ```
 
+You can find the example notebook under docs/notebooks
