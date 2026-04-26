@@ -1,0 +1,35 @@
+site_name: NegMAS RL
+# doc_dir: docs/
+site_dir: site/
+theme:
+  name: "material"
+nav:
+  - Introduction: index.md
+  - Example: "notebooks/Example.ipynb"
+  - Code Reference: reference/
+plugins:
+  - search
+  - gen-files:
+      scripts:
+        - scripts/gen_ref_pages.py # Use two or four spaces for indentation
+  - mkdocstrings
+  - offline
+  - mkdocs-jupyter:
+      execute: false
+      preprocessors:
+        - custom_preprocessor: scripts.tag_remover.IgnoreCodeCellPreprocessor
+      remove_tag_config:
+        remove_input_tags:
+          - hide_code
+  - literate-nav:
+      nav_file: SUMMARY.md
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+extra_css:
+  - css/custom.css
+  - https://unpkg.com/katex@0/dist/katex.min.css

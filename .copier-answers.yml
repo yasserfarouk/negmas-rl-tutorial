@@ -1,0 +1,9 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v2024.07.1
+_src_path: gh:astrojuanlu/copier-pylib
+author_email: y.mohammad@nec.com
+author_name: Yasser Mohammad
+github_org: yasserfarouk
+package_name: negmas_rl
+project_name: negmas-rl
+short_description: A simple RL wrapper for negotiations using negmas
