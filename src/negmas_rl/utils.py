@@ -53,7 +53,7 @@ def enumerate_in_order(
     return enumerate_similar(  # type: ignore
         [
             list(i.ordered_value_generator())
-            if i.is_discrete()
+            if i.is_finite()
             else list(
                 i.ordered_value_generator(
                     n_levels, grid=True, compact=True, endpoints=True

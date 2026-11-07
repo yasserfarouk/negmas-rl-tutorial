@@ -997,7 +997,7 @@ class OutcomeDecoder(SAOActionDecoder):
             enumerator = functools.partial(
                 enumerate_in_order, issues=os.issues, n_levels=nlevels
             )
-        elif not os.is_discrete():
+        elif not os.is_finite():
             enumerator = functools.partial(
                 os.enumerate_or_sample,
                 levels=nlevels,

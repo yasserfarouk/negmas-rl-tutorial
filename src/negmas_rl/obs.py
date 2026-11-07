@@ -671,7 +671,7 @@ class COutcomeEncoder(_Scalable):
         else:
             outcomes = (
                 os.enumerate_or_sample(DEFAULT_N_LEVELS)
-                if not os.is_discrete()
+                if not os.is_finite()
                 else os.enumerate()  # type: ignore
             )
         if self.sort_by_utility:
